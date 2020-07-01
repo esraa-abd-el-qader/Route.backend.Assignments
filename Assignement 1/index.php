@@ -44,7 +44,11 @@
 
     for ($i=0;$i <count($tests) ;$i++)
     if(is_bool($tests[$i])){
-        echo "Yes"."<br/>";
+        if($tests[$i]==true){
+            echo"Yes"."<br/>";
+        }else{
+            echo"No"."<br/>";
+        }
     }else{
         echo($tests[$i])."<br/>";
     }
